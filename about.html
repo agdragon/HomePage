@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="css/highlight.css" type="text/css">
     <link rel="stylesheet" href="css/archive.css" type="text/css">
     <link rel="stylesheet" href="css/china-social-icon.css" type="text/css">
+    <style>
+      .motto {
+              font-family: Ebrima;
+              font-size: 30px;
+              margin: 0;
+              padding: 0 20px;
+              color: #fff;
+      }
+    </style>
+    <script type="text/javascript" src="js/motto.min.js"></script>
+
 </head>
 <body>
 
@@ -41,11 +52,11 @@
 
         <!-- <h1 class="panel-cover__title panel-title"><a href="index.html" title="link to homepage"> 我见青山多妩媚
 </h1> -->
-        <hr class="panel-cover__divider" />
+        <!-- <hr class="panel-cover__divider" /> -->
 
-        <p class="panel-cover__description">
+        <!-- <p class="panel-cover__description"> -->
+        <p class="motto">
           <a href="index.html" title="link to homepage">
-            I believe that life is about collecting experiences and friends <br/> not money and laurels
           </a>
         </p>
 
@@ -116,10 +127,18 @@
     </div>
 
     <!-- js files -->
-    <script src="/huno/js/jquery.min.js"></script>
-    <script src="/huno/js/main.js"></script>
-    <script src="/huno/js/scale.fix.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scale.fix.js"></script>
+    <script>
+    var motto = new Motto('.motto',{
+        lyric: 'I believe that life is about collecting experiences and friends not money and laurels',
 
+        //showUpSpeed: 1000,
+        flashSpeed: 100,
+        flashTimeout: 1000,
+      })
+    </script>
 
     <!--kill ie6 -->
 <!--[if IE 6]>
